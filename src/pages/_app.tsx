@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import TungstenFont from "@next/font/local";
+import TungstenFont from "next/font/local";
 
 const tungsten = TungstenFont({
   src: [
