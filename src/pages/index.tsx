@@ -2,12 +2,14 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Header from "@/components/header";
+import Sidebar from "@/components/sidebar";
+import Menu from "@/components/menu";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Valorantt</title>
+        <title>Valorant</title>
         <meta
           name="description"
           content="My best attempt to create Valorant homepage."
@@ -16,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className="min-h-screen flex flex-col align-middle">
+        <div className="min-h-screen flex flex-row align-middle">
           <video
             autoPlay
             muted
@@ -26,6 +28,10 @@ export default function Home() {
             <source src="/videos/HomeScreen.mp4" type="video/mp4" />
           </video>
           <Header />
+          <Sidebar />
+          <div className="flex justify-between items-center absolute left-5 top-20 bottom-10 right-20">
+            <Menu />
+          </div>
         </div>
       </main>
     </>
