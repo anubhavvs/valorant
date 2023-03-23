@@ -13,7 +13,7 @@ const Header = () => {
   const [radianitePoints, setRadianitePoints] = useState(100);
 
   return (
-    <div className="flex flex-row justify-between p-2">
+    <div className="flex flex-row justify-between p-2 w-[97%]">
       <div className="flex flex-row justify-center space-x-3">
         <Logo />
         <div className="flex flex-col leading-none">
@@ -30,16 +30,16 @@ const Header = () => {
           <button className="rounded-full h-fit border border-red-800">
             <ErrorIcon />
           </button>
-          <div className="flex flex-row items-center space-x-1">
+          <div className="flex flex-row items-center space-x-1 cursor-pointer">
             <MissionIcon />
             <span>0/{missions}</span>
           </div>
-          <div className="flex flex-row items-center space-x-1">
+          <div className="flex flex-row items-center space-x-1 cursor-pointer">
             <Challenges />
             <span>0/{challenges}</span>
           </div>
         </div>
-        <div className="flex flex-row items-center space-x-2">
+        <div className="flex flex-row items-center space-x-2 cursor-pointer">
           <Image
             src="/images/Valorant_Points.webp"
             width={18}
@@ -48,7 +48,7 @@ const Header = () => {
           />
           <span>{valorantPoints}</span>
         </div>
-        <div className="flex flex-row items-center space-x-2">
+        <div className="flex flex-row items-center space-x-2 cursor-pointer">
           <Image
             src="/images/Radianite_Points.webp"
             width={18}
